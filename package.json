@@ -6,7 +6,7 @@
 
   "description": "zapt-saude",
 
-  "main": "../assets/js/index.js",
+  "main": "../assets/index/index.html",
 
   "scripts": {
 
