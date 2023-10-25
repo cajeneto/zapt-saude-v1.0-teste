@@ -1,0 +1,32 @@
+{
+
+  "name": "main",
+
+  "version": "1.0.0",
+
+  "description": "zapt-saude",
+
+  "main": "../assets/js/index.js",
+
+  "scripts": {
+
+    "test": "echo\"Error: no test especified\" && exit 1"
+
+  },
+
+  "author": "Hostílio Neto",
+
+  "license": "ISC",
+
+  "type": "module",
+
+  "dependencies": {
+
+    "firebase": "^10.4.0",
+
+    "html-pdf": "^3.0.1"
+
+  }
+
+}
+

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->  
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Zapt Saúde</title>
+
+</head>
+<body>
+
+
+    <head>
+            <!--    Cabeçalho-->
+        <div class="navigation">
+            <nav id="menu">
+                <div id="img-logo">
+                    <!--            Logo da empresa-->
+                    <a href="#inicio">
+                        <img class="imgLogo" src="/assets/img/zapt-saude-logo.jpeg" alt="">
+                    </a>
+                </div>
+                <!--                Formulário para cadastro-->
+                <div id="cadastro">
+                    <a href="#cadastro">CADASTRO</a>
+                </div>
+                <!--                    Relatório-->
+                <div id="relatorio">
+                    <a href="./formCadastro.html" target="_blank">RELATÓRIOS</a>
+                <!--    Fim do cabeçalho-->
+                </div>
+            </nav>
+        </div>
+    </head>
+                <!--    Início do corpo-->
+                <!--        Corpo principal-->
+            <div class="conteudoPrincipal">
+                <div class="dadosPessoais">
+                        <!--       INÍCIO DADOS CRIANÇA-->
+                        <div class="father1">
+                            <h1 class="titleSection">CADASTRO DE PACIENTE ZAPT SAÚDE</h1>
+                            <h2>DADOS DA CRIANÇA</h2>
+                            <div class="nameComplete">
+                                
+                                <div class="input">
+                                    <p class="nomeCompleto">NOME COMPLETO</p>
+                                    <input id="inputNameComplete" type="text" placeholder="NOME COMPLETO DA CRIANÇA">
+                                </div>
+                            
+                                <div class="doughter">
+                                    <div class="cpf">
+                                        <p>CPF</p>
+                                        <div class="input">
+                                            <input id="inputCPF" type="number" placeholder="Ex.: 12345678911">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="inputF">
+                                        <p>DATA DE NASCIMENTO</p>
+                                        <input id="inputDN" type="date" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="inputF">
+                                        <p>CARTÃO SUS</p>
+                                        <input id="inputCartaoSUS" type="text" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="inputF">
+                                        <p>RG</p>
+                                        <input id="inputRG" type="text" placeholder="">
+                                    </div>
+                                </div>
+                                <div class="">
+                                    <div class="inputF">
+                                        <p>CONTATO</p>
+                                        <input id="inputContato" type="text" placeholder="Ex.: 82999322366">
+                                    </div>
+                                </div>
+                            </div>           
+                        </div>
+                        <!-- FIM DADOS CRIANÇA -->
+
+                        <!-- INÍCIO DADOS RESPONSÁVEL -->
+                    <div class="father2">
+                        <h2>DADOS DO RESPONSÁVEL</h2>
+                        <div class="input">
+                            <p class="nomeCompleto">NOME COMPLETO</p>
+                            <input id="inputNameResp" type="text" placeholder="NOME COMPLETO DO RESPONSÁVEL">
+                        </div>
+                        <div class="doughter">
+                            <div class="cpf">
+                                <p>CPF</p>
+                                <div class="input">
+                                    <input id="inputCPFResp" type="number" placeholder="Ex.: 12345678911">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="inputF">
+                                <p>RG</p>
+                                <input id="inputRGResp" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <!-- DADOS DE ENDEREÇO -->
+                        <div class="">
+                            <div class="inputF">
+                                <p>RUA</p>
+                                <input id="inputRua" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="inputF">
+                                <p>NÚMERO</p>
+                                <input id="inputNumero" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="inputF">
+                                <p>BAIRRO</p>
+                                <input id="inputENDER" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="inputF">
+                                <p>CIDADE</p>
+                                <input id="inputCidade" type="text" placeholder="">
+                            </div>
+                        </div>
+                            <div class="">
+                                <div class="inputF">
+                                    <p>Nº TÍTULO ELEITOR</p>
+                                    <input id="inputTitulo" type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="inputF">
+                                    <p>ZONA</p>
+                                    <input id="inputZona" type="text" placeholder="">
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="inputF">
+                                    <p>SEÇÃO</p>
+                                    <input id="inputSecao" type="text" placeholder="">
+                                </div>
+                            </div>
+                        <!-- FIM DADOS ENDEREÇO -->
+                        <!-- FIM DADOS RESPONSÁVEL -->
+
+                    </div>
+                        
+                        <!-- <div class="">
+                            <p>TÍTULO DE ELEITOR</p>
+                            <div class="inputF">
+                                <input id="inputTITULO" type="text" placeholder="">
+                            </div>
+                            
+                        </div> -->
+                        
+                        <!-- <button id="btnCadastro" type="button" onclick="create()">CADASTRAR</button> -->
+                        <button id="btnCadastro" type="submit" >CADASTRAR</button>
+                    </div>
+
+
+                    <!-- AQUI VAI O REGISTRO QUE FORAM CADASTRADOS, SERÁ UM ATALHO LATERAL -->
+                <div class="conteudoRegistro">
+                    <div class="mainRegistro">
+                        <h3>REGISTRO CADASTRO</h3>
+                    </div>
+                    
+                   <!--  <div class="registroP">
+                        <p class="namePaciente">$nomePaciente AQUI VAI O NOME DO PACIENTE</p>
+                    
+                            <a href="#registros" target="_blank" rel="noopener noreferrer">
+                                <img src="/assets/img/informacoes.png" alt="img-perfil-paciente" class="incon">
+                            </a> -->
+
+                    </div>
+                    <!-- <div class="registroP">
+                        <p class="namePaciente">$nomePaciente AQUI VAI O NOME DO PACIENTE</p>
+                        
+                        <div class="icon-link">
+                        <a class="a" href="#registros" target="_blank" rel="noopener noreferrer">
+                            <img src="/assets/img/informacoes.png" alt="img-perfil-paciente" class="incon"> 
+                        </div> -->
+                        </a>
+
+                    </div>
+                    
+
+                </div>
+
+            </div>
+                <!--        Conteúdo principal-->
+    
+    
+    
+    
+    <!--        Rodapé -->
+    <div class="custom-shape-divider-bottom-1683068753">
+    </div>
+    <footer class="main_footer container">
+
+        </div><!--Contant-->
+        
+        <div class="main_footer_copy">
+            <p class="m-b-footer">Associação Beneficente das Famílias do Complexo Benedito Bentes 
+                CNPJ: 08.378.385/0001-37
+                Rua João Paulo I, 141 A - Alto da Alegria Bendito Bentes – Maceió/AL
+                E-mail: zapt_saude@hotmail.com Tel:(82) 99979-1903</p>
+            <p class="m-b-footer"> ZAPT SAÚDE - 2023, todos os direitos reservados.</p> 
+            <p class="by"><i class="icon icon-heart-3"></i> Desenvolvido por: <a href="#">getHoss Tecnologia</a></p>
+        </div>
+        <div class="icons">
+            <div class="logoIcons">......</div>
+            <div class="logoIcons">......</div>
+            <div class="logoIcons">......</div>
+        </div>
+    </footer>
+    <!--        Corpo-->
+    <!--        Footer-->
+    <!--    Fim do corpo-->
+    <!--    Inicio do rodapé-->
+    <!--        Copyright-->
+
+
+
+    <script src="/assets/js/index.js" type="module"></script>
+</body>
+</html>

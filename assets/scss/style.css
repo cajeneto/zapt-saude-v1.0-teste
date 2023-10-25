@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: rgb(80, 84, 218);
+}
+
+.navigation {
+  display: flex;
+  background-color: rgb(205, 233, 200);
+  font-size: 21px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  justify-content: space-between;
+  align-self: center;
+}
+.navigation #cadastro, .navigation #relatorio {
+  width: auto;
+  height: auto;
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  align-self: center;
+}
+
+.imgLogo {
+  display: block;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.conteudoPrincipal {
+  display: flex;
+  gap: 5rem;
+  flex-direction: row;
+  padding: 2rem;
+}
+
+.conteudoRegistro {
+  display: block;
+  background-color: rgb(205, 233, 200);
+  border: 2px solid rgb(143, 140, 140);
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 40rem;
+  overflow-y: scroll;
+  height: 48rem;
+}
+.conteudoRegistro .mainRegistro h3 {
+  font-size: x-large;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.conteudoRegistro .registroP {
+  background-color: rgb(108, 113, 247);
+  border: 2px solid rgb(143, 140, 140);
+  padding: 0.5rem;
+  border-radius: 10px;
+  margin: 10px;
+  flex-wrap: wrap;
+  display: grid;
+}
+.conteudoRegistro .registroP .incon-link .link-a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.conteudoRegistro .registroP .incon, .conteudoRegistro .registroP .img-perfil {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 10px;
+  margin: 5px;
+}
+.conteudoRegistro .registroP #btn-imp {
+  margin: 5px;
+}
+
+.dadosPessoais {
+  display: grid;
+  width: 60rem;
+  margin: 1rem;
+  padding: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  align-content: center;
+  align-items: center;
+  gap: 2rem;
+  /* font-style: italic; */
+  font-weight: bold;
+  font-size: large;
+}
+.dadosPessoais p {
+  align-content: center;
+  margin-left: 10px;
+}
+.dadosPessoais h1 {
+  text-align: center;
+  padding: 1rem;
+  margin-top: -6rem;
+}
+.dadosPessoais .nameComplete {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.dadosPessoais .nameComplete #inputNameComplete {
+  width: 20rem;
+}
+.dadosPessoais .nameComplete #inputCPF {
+  width: 10rem;
+}
+.dadosPessoais .nameComplete #inputCartaoSUS {
+  width: 15rem;
+}
+.dadosPessoais .nameComplete #inputRG {
+  width: 8rem;
+}
+.dadosPessoais .father1, .dadosPessoais .father2, .dadosPessoais .father3 {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(202, 243, 219, 0.781);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  gap: 1rem;
+}
+.dadosPessoais .father1 h2, .dadosPessoais .father2 h2, .dadosPessoais .father3 h2 {
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 10px;
+  max-width: 1080px;
+  min-width: 500px;
+}
+.dadosPessoais .father1 #inputNameResp, .dadosPessoais .father2 #inputNameResp, .dadosPessoais .father3 #inputNameResp {
+  width: 20rem;
+}
+.dadosPessoais .father1 #inputCPFResp, .dadosPessoais .father2 #inputCPFResp, .dadosPessoais .father3 #inputCPFResp {
+  width: 10rem;
+}
+.dadosPessoais .father1 #inputRGResp, .dadosPessoais .father2 #inputRGResp, .dadosPessoais .father3 #inputRGResp {
+  width: 8rem;
+}
+.dadosPessoais .father1 #inputRua, .dadosPessoais .father2 #inputRua, .dadosPessoais .father3 #inputRua {
+  width: 20rem;
+}
+.dadosPessoais .father1 #inputNumero, .dadosPessoais .father2 #inputNumero, .dadosPessoais .father3 #inputNumero {
+  width: 7rem;
+}
+.dadosPessoais .father1 #inputCidade, .dadosPessoais .father2 #inputCidade, .dadosPessoais .father3 #inputCidade {
+  width: 8rem;
+}
+
+input {
+  height: 1.5rem;
+  background-color: rgb(205, 233, 200);
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+.father {
+  display: flex;
+  width: 25rem;
+}
+
+#btnCadastro {
+  color: rgb(80, 84, 218);
+  background-color: rgb(205, 233, 200);
+  border: none;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 10px;
+  margin-left: 22rem;
+  margin-right: 20rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+#btnCadastro:hover {
+  background-color: rgb(205, 233, 200);
+  transition: 100ms;
+  color: rgb(80, 84, 218);
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 2px 2px 20px 1px rgba(117, 117, 116, 0.678);
+}/*# sourceMappingURL=style.css.map */
