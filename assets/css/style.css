@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap");
+/* line 7, ../../../Documents/zapt_saude/assets/scss/style.scss */
 * {
   padding: 0;
   margin: 0;
@@ -5,20 +7,25 @@
   text-decoration: none;
 }
 
+/* line 16, ../../../Documents/zapt_saude/assets/scss/style.scss */
 body {
   width: 100%;
-  height: 100vh;
-  background: rgb(80, 84, 218);
+  background: rgba(172, 161, 245, 0.438);
 }
 
+/* line 23, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .navigation {
   display: flex;
-  background-color: rgb(205, 233, 200);
+  background-color: rgba(25, 234, 109, 0.836);
   font-size: 21px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   justify-content: space-between;
   align-self: center;
+  position: relative;
+  box-shadow: 1px 1px 10px #575757e1;
 }
+
+/* line 32, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .navigation #cadastro, .navigation #relatorio {
   width: auto;
   height: auto;
@@ -29,6 +36,21 @@ body {
   align-items: center;
 }
 
+/* #cadastro:hover {
+    background-color: $roxoBackground;
+    height: 60px;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    
+}
+
+
+ #relatorio:hover {
+    background-color: $roxoFundoForm;
+    
+} */
+/* line 62, ../../../Documents/zapt_saude/assets/scss/style.scss */
 #menu {
   display: flex;
   justify-content: space-between;
@@ -38,6 +60,7 @@ body {
   align-self: center;
 }
 
+/* line 73, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .imgLogo {
   display: block;
   width: 10rem;
@@ -46,76 +69,111 @@ body {
   padding: 10px;
 }
 
+/* line 89, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .conteudoPrincipal {
   display: flex;
   gap: 5rem;
   flex-direction: row;
   padding: 2rem;
+  background-color: rgba(172, 161, 245, 0.438);
 }
 
+/* line 98, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .conteudoRegistro {
   display: block;
-  background-color: rgb(205, 233, 200);
-  border: 2px solid rgb(143, 140, 140);
+  background-color: rgba(161, 146, 255, 0.507);
+  border: 2px solid #8f8c8c;
   padding: 0.5rem;
   border-radius: 10px;
-  width: 40rem;
+  width: 50rem;
   overflow-y: scroll;
   height: 48rem;
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
 }
+
+/* line 110, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .conteudoRegistro .mainRegistro h3 {
   font-size: x-large;
   text-align: center;
   padding: 1rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgba(74, 46, 252, 0.753);
+  border-radius: 20px 20px 20px 20px;
+  color: #f8f7f6;
 }
+
+/* line 122, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .conteudoRegistro .registroP {
-  background-color: rgb(108, 113, 247);
-  border: 2px solid rgb(143, 140, 140);
+  background-color: #f1f1f1;
+  border: 2px solid #8f8c8c;
   padding: 0.5rem;
   border-radius: 10px;
   margin: 10px;
   flex-wrap: wrap;
   display: grid;
 }
+
+/* line 141, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .conteudoRegistro .registroP .incon-link .link-a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 1rem;
 }
+
+/* line 158, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .conteudoRegistro .registroP .incon, .conteudoRegistro .registroP .img-perfil {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 10px;
   margin: 5px;
 }
+
+/* line 167, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .conteudoRegistro .registroP #btn-imp {
   margin: 5px;
 }
 
+/* line 184, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.titleSection {
+  display: block;
+  background-color: rgba(74, 46, 252, 0.753);
+  margin: 0;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  position: relative;
+  margin-bottom: -15px;
+}
+
+/* line 198, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .dadosPessoais {
   display: grid;
   width: 60rem;
-  margin: 1rem;
+  position: relative;
   padding: 1rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   align-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   /* font-style: italic; */
   font-weight: bold;
   font-size: large;
 }
+
+/* line 215, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .dadosPessoais p {
   align-content: center;
   margin-left: 10px;
 }
+
+/* line 219, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .dadosPessoais h1 {
   text-align: center;
   padding: 1rem;
-  margin-top: -6rem;
+  color: #f8f7f6;
 }
+
+/* line 227, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .dadosPessoais .nameComplete {
   display: flex;
   flex-direction: row;
@@ -123,90 +181,609 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
 }
+
+/* line 234, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .dadosPessoais .nameComplete #inputNameComplete {
   width: 20rem;
 }
+
+/* line 238, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .dadosPessoais .nameComplete #inputCPF {
   width: 10rem;
 }
+
+/* line 242, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .dadosPessoais .nameComplete #inputCartaoSUS {
   width: 15rem;
 }
+
+/* line 246, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .dadosPessoais .nameComplete #inputRG {
   width: 8rem;
 }
-.dadosPessoais .father1, .dadosPessoais .father2, .dadosPessoais .father3 {
+
+/* line 252, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.dadosPessoais .father1 {
   display: flex;
   flex-direction: row;
-  background-color: rgba(202, 243, 219, 0.781);
+  background-color: rgba(161, 146, 255, 0.507);
   border-radius: 10px;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-bottom: 20px;
+  gap: 2rem;
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* line 265, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.dadosPessoais .father2 {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(161, 146, 255, 0.507);
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px;
-  gap: 1rem;
+  gap: 2rem;
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
 }
-.dadosPessoais .father1 h2, .dadosPessoais .father2 h2, .dadosPessoais .father3 h2 {
-  margin-left: 30%;
-  margin-right: 30%;
-  margin-bottom: 10px;
-  max-width: 1080px;
-  min-width: 500px;
+
+/* line 277, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.dadosPessoais .father2 h2 {
+  width: auto;
+  margin-left: 200px;
 }
-.dadosPessoais .father1 #inputNameResp, .dadosPessoais .father2 #inputNameResp, .dadosPessoais .father3 #inputNameResp {
+
+/* line 284, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.dadosPessoais .father2 #inputNameResp {
   width: 20rem;
 }
-.dadosPessoais .father1 #inputCPFResp, .dadosPessoais .father2 #inputCPFResp, .dadosPessoais .father3 #inputCPFResp {
+
+/* line 288, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.dadosPessoais .father2 #inputCPFResp {
   width: 10rem;
 }
-.dadosPessoais .father1 #inputRGResp, .dadosPessoais .father2 #inputRGResp, .dadosPessoais .father3 #inputRGResp {
-  width: 8rem;
-}
-.dadosPessoais .father1 #inputRua, .dadosPessoais .father2 #inputRua, .dadosPessoais .father3 #inputRua {
-  width: 20rem;
-}
-.dadosPessoais .father1 #inputNumero, .dadosPessoais .father2 #inputNumero, .dadosPessoais .father3 #inputNumero {
-  width: 7rem;
-}
-.dadosPessoais .father1 #inputCidade, .dadosPessoais .father2 #inputCidade, .dadosPessoais .father3 #inputCidade {
+
+/* line 292, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.dadosPessoais .father2 #inputRGResp {
   width: 8rem;
 }
 
+/* line 296, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.dadosPessoais .father2 #inputRua {
+  width: 20rem;
+}
+
+/* line 300, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.dadosPessoais .father2 #inputNumero {
+  width: 7rem;
+}
+
+/* line 304, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.dadosPessoais .father2 #inputCidade {
+  width: 8rem;
+}
+
+/* line 318, ../../../Documents/zapt_saude/assets/scss/style.scss */
 input {
   height: 1.5rem;
-  background-color: rgb(205, 233, 200);
+  /* background-color: $verdeFundoNav; */
   border: none;
   border-radius: 20px;
   padding: 10px;
 }
 
+/* line 328, ../../../Documents/zapt_saude/assets/scss/style.scss */
 input:focus {
   outline: 0;
 }
 
+/* line 332, ../../../Documents/zapt_saude/assets/scss/style.scss */
 .father {
   display: flex;
   width: 25rem;
 }
 
+/* line 338, ../../../Documents/zapt_saude/assets/scss/style.scss */
 #btnCadastro {
-  color: rgb(80, 84, 218);
-  background-color: rgb(205, 233, 200);
+  color: rgba(74, 46, 252, 0.753);
+  background-color: rgba(25, 234, 109, 0.836);
   border: none;
   width: 12rem;
   height: 3rem;
   border-radius: 10px;
   margin-left: 22rem;
   margin-right: 20rem;
+  margin-top: 2rem;
   font-weight: bold;
   font-size: 1rem;
   padding: 0.5rem;
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
+  position: relative;
 }
 
+/* line 358, ../../../Documents/zapt_saude/assets/scss/style.scss */
 #btnCadastro:hover {
-  background-color: rgb(205, 233, 200);
+  background-color: rgba(25, 234, 109, 0.836);
   transition: 100ms;
-  color: rgb(80, 84, 218);
+  color: rgba(74, 46, 252, 0.753);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
   box-shadow: 2px 2px 20px 1px rgba(117, 117, 116, 0.678);
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*FOOTER*/
+/* line 372, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_container {
+  /* display: inline; */
+  position: relative;
+  margin-top: 20px;
+}
+
+/* line 378, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.botao:hover::after, .botao:hover::after {
+  opacity: 1;
+  width: 150%;
+}
+
+/* line 382, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_copy {
+  background-color: rgba(25, 234, 109, 0.836);
+  width: 100%;
+  float: left;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 1.5em 0em;
+}
+
+/* line 391, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_copy p {
+  font-size: 1em;
+  color: rgba(74, 46, 252, 0.753);
+  height: 20px;
+}
+
+/* line 396, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_copy .m-b-footer {
+  margin-bottom: 0.5em;
+}
+
+/* line 399, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_copy .by {
+  font-size: 0.96em;
+}
+
+/* line 402, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_copy .by a {
+  color: rgba(74, 46, 252, 0.753);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+/* line 408, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_copy .by a:hover {
+  text-decoration: underline;
+  color: #313131;
+}
+
+/* line 412, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_copy .by i {
+  font-size: 0.96em;
+  margin-right: 3px;
+  color: #e82626;
+}
+
+/* line 419, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_Page-Print {
+  background-color: rgba(25, 234, 109, 0.836);
+  width: 100%;
+  float: left;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  padding: 1.5em 0em;
+}
+
+/* line 428, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_Page-Print p {
+  font-size: 1em;
+  color: rgba(74, 46, 252, 0.753);
+  height: 20px;
+}
+
+/* line 433, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_Page-Print .m-b-footer {
+  margin-bottom: 0.5em;
+}
+
+/* line 436, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_Page-Print .by {
+  font-size: 0.96em;
+}
+
+/* line 439, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_Page-Print .by a {
+  color: rgba(74, 46, 252, 0.753);
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+/* line 445, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_Page-Print .by a:hover {
+  text-decoration: underline;
+  color: #313131;
+}
+
+/* line 449, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.main_footer_Page-Print .by i {
+  font-size: 0.96em;
+  margin-right: 3px;
+  color: #e82626;
+}
+
+/*Responsivo*/
+/*768PX BREAKPOINT*/
+@media (min-width: 48em) {
+  /* line 478, ../../../Documents/zapt_saude/assets/scss/style.scss */
+  .colfooter {
+    width: 30%;
+    margin-right: 5%;
+    margin-bottom: 0;
+  }
+  /* line 479, ../../../Documents/zapt_saude/assets/scss/style.scss */
+  .colfooter:nth-of-type(3n+0) {
+    margin-right: 0;
+    border-right: 0;
+  }
+}
+
+/* line 483, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.icons {
+  display: flex;
+  width: 100px;
+  margin: 0;
+  margin-left: 12rem;
+  flex: 1;
+  margin-top: -70px;
+  position: relative;
+  overflow: auto;
+  float: left;
+}
+
+/* line 497, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.logoIcons {
+  display: block;
+  margin: auto;
+  background-color: rgba(74, 46, 252, 0.753);
+  border-radius: 100%;
+  height: 30px;
+}
+
+/* line 508, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.relatoriosMain {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 0px;
+  width: auto;
+  height: 80px;
+  padding: 1rem;
+  margin: 1rem;
+  align-self: center;
+  text-align: center;
+  align-items: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #3b3b3b;
+}
+
+/* line 527, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio {
+  display: grid;
+  width: auto;
+  height: 45rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  margin-left: 15%;
+}
+
+/* line 542, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1, .listaRelatorio .reg2 {
+  display: grid;
+  margin: 10px;
+  border-radius: 1rem 0px 0px 1rem;
+  overflow-y: scroll;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
+  width: 82%;
+  right: 120%;
+}
+
+/* line 552, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .qntPac, .listaRelatorio .reg2 .qntPac {
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  column-gap: 30px;
+  row-gap: 10px;
+  flex-wrap: wrap;
+  width: auto;
+  height: 14rem;
+  background-color: #e8f8e3;
+  margin: 1rem;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: 18px;
+  overflow-y: wrap;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* line 570, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .buttonEdit, .listaRelatorio .reg2 .buttonEdit {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  width: 7rem;
+  height: 2.5rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+/* line 586, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .buttonEdit .btnEditReg, .listaRelatorio .reg2 .buttonEdit .btnEditReg {
+  background-color: rgba(25, 234, 109, 0.836);
+  color: rgba(74, 46, 252, 0.753);
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  width: 7rem;
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* line 599, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .buttonEdit .material-symbols-outlined, .listaRelatorio .reg2 .buttonEdit .material-symbols-outlined {
+  padding-left: 5px;
+  position: relative;
+}
+
+/* line 605, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .btnEditReg:hover, .listaRelatorio .reg2 .btnEditReg:hover {
+  background-color: rgba(25, 234, 109, 0.836);
+  color: rgba(74, 46, 252, 0.753);
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
+  border: none;
+  border-radius: 10px;
+  width: 7rem;
+  font-size: 20px;
+  transition: 100ms;
+}
+
+/* line 619, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .buttonImprime, .listaRelatorio .reg2 .buttonImprime {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  width: 8rem;
+  height: 2.5rem;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 0.5rem;
+  cursor: pointer;
+}
+
+/* line 631, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .buttonImprime .btnImprimeReg, .listaRelatorio .reg2 .buttonImprime .btnImprimeReg {
+  background-color: rgba(25, 234, 109, 0.836);
+  color: rgba(74, 46, 252, 0.753);
+  display: flex;
+  border: none;
+  border-radius: 10px;
+  width: 8rem;
+  font-size: 18px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* line 644, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .buttonImprime .btnImprimeReg .material-symbols-outlined, .listaRelatorio .reg2 .buttonImprime .btnImprimeReg .material-symbols-outlined {
+  padding-left: 5px;
+  position: relative;
+}
+
+/* line 652, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .btnImprimeReg:hover, .listaRelatorio .reg2 .btnImprimeReg:hover {
+  background-color: rgba(25, 234, 109, 0.836);
+  color: rgba(74, 46, 252, 0.753);
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
+  border: none;
+  border-radius: 10px;
+  width: 8rem;
+  font-size: 19px;
+  transition: 100ms;
+}
+
+/* line 666, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .titleReg2, .listaRelatorio .reg1 .titleReg1, .listaRelatorio .reg2 .titleReg2, .listaRelatorio .reg2 .titleReg1 {
+  display: flex;
+  background-color: rgba(74, 46, 252, 0.753);
+  border-radius: 15px 0px 0px 0px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  align-items: center;
+  font-size: 30px;
+  height: 3rem;
+  justify-content: center;
+  color: #f8f7f6;
+}
+
+/* line 680, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.listaRelatorio .reg1 .editPac, .listaRelatorio .reg2 .editPac {
+  display: grid;
+  width: auto;
+  height: 35rem;
+  margin: 2rem;
+  border-radius: 1rem;
+  background-color: #e8f8e3;
+}
+
+/* line 702, ../../../Documents/zapt_saude/assets/scss/style.scss */
+dialog::backdrop {
+  background-color: #3b3b3ba6;
+}
+
+/* line 707, ../../../Documents/zapt_saude/assets/scss/style.scss */
+dialog {
+  border: none;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1em;
+  width: 50%;
+  left: 25%;
+  top: 10%;
+  flex-wrap: wrap;
+  background-color: rgba(172, 161, 245, 0.918);
+  padding: 1%;
+}
+
+/* line 723, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.editTituloDadosModal {
+  font-size: 18px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+/* line 735, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.h1Edit {
+  font-style: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* line 742, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.editTituloResponsavelDadosModal {
+  display: flex;
+  font-size: 17px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+/* line 751, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.colunasModal, .colunasModal2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+/* line 756, ../../../Documents/zapt_saude/assets/scss/style.scss */
+#inputNameCompleteModal,
+#inputCPFModal,
+#inputDNModal,
+#inputCartaoSUSModal,
+#inputRGModal,
+#inputContatoModal,
+#inputIDRegistroModal {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: #e8f8e3;
+  width: 20rem;
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
+}
+
+/* line 771, ../../../Documents/zapt_saude/assets/scss/style.scss */
+#inputNomeResponsavelModal,
+#inputCPFResponsavelModal,
+#inputRuaResponsavelModal,
+#inputBairroModal,
+#inputCidadeModal {
+  padding: 0.5rem;
+  outline: none;
+  border: none;
+  background-color: #e8f8e3;
+  width: 20rem;
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
+}
+
+/* line 786, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.modal {
+  font-size: 1.5rem;
+  padding: 5px;
+  left: 10px;
+  font-style: bold;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: grid;
+  width: 22rem;
+}
+
+/* line 796, ../../../Documents/zapt_saude/assets/scss/style.scss */
+.btnsModal {
+  width: auto;
+  justify-content: end;
+  display: flex;
+  gap: 25px;
+}
+
+/* line 809, ../../../Documents/zapt_saude/assets/scss/style.scss */
+#btnCadastroModal {
+  color: rgba(74, 46, 252, 0.753);
+  background-color: rgba(25, 234, 109, 0.836);
+  border: none;
+  width: auto;
+  height: 3rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 827, ../../../Documents/zapt_saude/assets/scss/style.scss */
+#btnCancel {
+  color: #fcf9f9;
+  background-color: #eb4c4c;
+  border: none;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 10px rgba(24, 24, 24, 0.788);
+  position: relative;
+  cursor: pointer;
+}
+
+/* line 845, ../../../Documents/zapt_saude/assets/scss/style.scss */
+#btnCancel:hover {
+  transition: 100ms;
+  color: #fcf9f9;
+  font-weight: bold;
+  font-size: 17px;
+  box-shadow: 2px 2px 20px 1px rgba(117, 117, 116, 0.678);
+}
+
+/* line 854, ../../../Documents/zapt_saude/assets/scss/style.scss */
+#btnCadastroModal:hover {
+  transition: 100ms;
+  color: rgba(74, 46, 252, 0.753);
+  font-weight: bold;
+  font-size: 17px;
+  box-shadow: 2px 2px 20px 1px rgba(117, 117, 116, 0.678);
+}
+
+/*# sourceMappingURL=style.css.map */
