@@ -3,6 +3,7 @@
 
 
 
+
 *{
     padding: 0;
     margin: 0;
@@ -75,6 +76,7 @@ body {
     height: 5rem;
     border-radius: 5px;
     padding: 10px;
+    
 }
 
 // FIM DA BARRA DE NAVEGAÇÃO
@@ -377,13 +379,95 @@ input:focus {
     opacity:1;
     width: 150%;
 }
-.main_footer_copy   { background-color: $verdeFundoNav; width:100%; float:left; font-family: 'Lato', sans-serif; text-align:center; padding:1.5em 0em; }
-.main_footer_copy p { font-size:1em; color: $roxoBackground; height:20px; }
-.main_footer_copy .m-b-footer   { margin-bottom:0.5em; }
-.main_footer_copy .by   { font-size:0.96em; }
-.main_footer_copy .by a       { color:$roxoBackground; text-decoration:none; font-weight:600; transition:0.2s; }
-.main_footer_copy .by a:hover { text-decoration:underline; color:#313131 }
-.main_footer_copy .by i { font-size:0.96em; margin-right:3px; color:#e82626; }
+.main_footer_copy   { 
+    background-color: $verdeFundoNav; 
+    width:100%; 
+    float:left; 
+    font-family: 'Lato', sans-serif; 
+    text-align:center; 
+    padding:1.5em 0em; 
+}
+
+.main_footer_copy p { 
+    font-size:1em; 
+    color: $roxoBackground; 
+    height:20px; 
+}
+.main_footer_copy .m-b-footer   { 
+    margin-bottom:0.5em; 
+}
+.main_footer_copy .by   { 
+    font-size:0.96em; 
+}
+.main_footer_copy .by a       
+{ color:$roxoBackground; 
+    text-decoration:none; 
+    font-weight:600; 
+    transition:0.2s; 
+}
+.main_footer_copy .by a:hover { 
+    text-decoration:underline; 
+    color:#313131 
+}
+.main_footer_copy .by i { 
+    font-size:0.96em; 
+    margin-right:3px; 
+    color:#e82626; 
+}
+/////////////////////////////////////////////////////
+/// page 'teste'
+.main_footer_Page-Print   { 
+    background-color: $verdeFundoNav; 
+    width:100%; 
+    float:left; 
+    font-family: 'Lato', sans-serif; 
+    text-align:center; 
+    padding:1.5em 0em; 
+}
+
+.main_footer_Page-Print p { 
+    font-size:1em; 
+    color: $roxoBackground; 
+    height:20px; 
+}
+.main_footer_Page-Print .m-b-footer   { 
+    margin-bottom:0.5em; 
+}
+.main_footer_Page-Print .by   { 
+    font-size:0.96em; 
+}
+.main_footer_Page-Print .by a       
+{ color:$roxoBackground; 
+    text-decoration:none; 
+    font-weight:600; 
+    transition:0.2s; 
+}
+.main_footer_Page-Print .by a:hover { 
+    text-decoration:underline; 
+    color:#313131 
+}
+.main_footer_Page-Print .by i { 
+    font-size:0.96em; 
+    margin-right:3px; 
+    color:#e82626; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -418,7 +502,7 @@ input:focus {
     height: 30px;
 }
 
-/////////////////////////////// PÁGINA RELATÓRIOS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+/////////////////////////////// PÁGINA RELATÓRIOS \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 
 
 .relatoriosMain {
@@ -442,15 +526,18 @@ input:focus {
 
 .listaRelatorio {
     display: grid;
-    grid-template-columns : repeat(2,1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 0px;
+    //grid-template-columns : repeat(1,1fr);
+    //grid-template-rows: 1fr;
+    //grid-column-gap: 1.5rem;
+    //grid-row-gap: 0px;
     width: auto;
     height: 45rem;
     //background-color: #e82626;
     margin: 0.5rem;
     padding: 0.5rem;
+    margin-left: 15%;
+    
+    
 
         .reg1, .reg2 {
             display: grid;
@@ -459,12 +546,13 @@ input:focus {
             overflow-y: scroll;
             flex-wrap: wrap;
             box-shadow: $boxShadow;
-            width: 800px;
+            width: 82%;
+            right: 120%;
 
             .qntPac {
                 display: grid;
-                grid-template-columns: 4fr 2fr 2fr;
-                column-gap: 50px;
+                grid-template-columns: 3fr 2fr 2fr;
+                column-gap: 30px;
                 row-gap: 10px;
                 flex-wrap: wrap;
                 width: auto;
@@ -478,37 +566,49 @@ input:focus {
                 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
             }
 
-////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////    ESTILIZAÇÃO DE BOTÕES { EDITAR E IMPRMIR }///////////////////////////////////////////////////////////////////////////////////////////////////
             .buttonEdit {
                 position: relative;
                 display: flex;
                 //background-color: #e82626;
                 justify-content: space-around;
-                text-align: center;
-                width: 5rem;
+                //text-align: center;
+                //align-items: center;
+                width: 7rem;
                 height: 2.5rem;
-                margin-left: 2rem;
-                //margin-top: 1rem;
+                margin-left: 30%;
+                margin-right: 30%;
+                margin-top: 0.5rem;
+                
+                cursor: pointer;
                 
 
-                    #btnEditReg{
+                    .btnEditReg{
                         background-color: $verdeFundoNav;
                         color: $roxoBackground;
-                        //box-shadow: $boxShadow;
+                        display: flex;
                         border: none;
                         border-radius: 10px;
-                        width: 5rem;
+                        width: 7rem;
                         font-size: 18px;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                    }
+                    .material-symbols-outlined {
+                        padding-left: 5px;
+                        position: relative;
                     }
             }
 
-            #btnEditReg:hover{
+            .btnEditReg:hover{
                 background-color: $verdeFundoNav;
                 color: $roxoBackground;
                 box-shadow: $boxShadow;
                 border: none;
                 border-radius: 10px;
-                width: 5rem;
+                width: 7rem;
                 font-size: 20px;
                 transition: 100ms;
                 
@@ -521,34 +621,47 @@ input:focus {
                 display: flex;
                 justify-content: space-around;
                 text-align: center;
-                width: 5rem;
+                width: 8rem;
                 height: 2.5rem;
-                //margin-left: 40rem;
+                margin-left: 30%;
+                margin-right: 30%;
+                margin-top: 0.5rem;
+                cursor: pointer;
 
-                    #btnImprimeReg{
+                    .btnImprimeReg{
                         background-color: $verdeFundoNav;
                         color: $roxoBackground;
-                        //box-shadow: $boxShadow;
+                        display: flex;
                         border: none;
                         border-radius: 10px;
-                        width: 5rem;
+                        width: 8rem;
                         font-size: 18px;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                        cursor: pointer;
+                        
+                        .material-symbols-outlined {
+                            padding-left: 5px;
+                            position: relative;
+                        }
                         
                     }
             }
 
-            #btnImprimeReg:hover{
+            .btnImprimeReg:hover{
                 background-color: $verdeFundoNav;
                 color: $roxoBackground;
                 box-shadow: $boxShadow;
                 border: none;
                 border-radius: 10px;
-                width: 5rem;
-                font-size: 20px;
+                width: 8rem;
+                font-size: 19px;
                 transition: 100ms;
                 
+                
             }
-           ///////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////// FIM DE ESTILIZAÇÃO DE BOTÕES { EDITAR E IMPRMIR }  //////////////////////////////////////////////////////////////////////
 
             .titleReg2, .titleReg1{
                 display: flex;
@@ -578,3 +691,176 @@ input:focus {
             
         }
 }
+
+
+
+
+
+
+//////////////////////// CONFIGURAR PÁGINA MODAL \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+dialog::backdrop{
+    background-color: #3b3b3ba6;
+
+}
+
+dialog{
+    border: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1em;
+    width: 50%;
+    left: 25%;
+    top: 10%;
+    //height: auto;
+    flex-wrap: wrap;
+    background-color: rgba(172, 161, 245, 0.918);
+    padding: 1%;
+    //align-items: start;
+    //justify-content: start;
+
+}
+
+.editTituloDadosModal {
+    font-size: 18px;
+    //text-transform: uppercase;
+    //color: white;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+
+.h1Edit {
+    //margin-right: %;
+    font-style: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+.editTituloResponsavelDadosModal{
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+.colunasModal, .colunasModal2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
+}
+
+#inputNameCompleteModal,
+#inputCPFModal,
+#inputDNModal,
+#inputCartaoSUSModal,
+#inputRGModal,
+#inputContatoModal,
+#inputIDRegistroModal {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #e8f8e3;
+    width: 20rem;
+    box-shadow: $boxShadow;
+}
+
+#inputNomeResponsavelModal,
+#inputCPFResponsavelModal,
+#inputRuaResponsavelModal,
+#inputBairroModal,
+#inputCidadeModal {
+    padding: 0.5rem;
+    outline: none;
+    border: none;
+    background-color: #e8f8e3;
+    width: 20rem;
+    box-shadow: $boxShadow;
+}
+
+
+
+.modal { 
+    font-size: 1.5rem;
+    padding: 5px;
+    left: 10px;
+    font-style: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: grid;
+    width: 22rem;
+}
+
+.btnsModal {
+    width: auto;
+    //align-items: end;
+    justify-content: end;
+    //justify-items: end;
+    display: flex;
+    gap: 25px;
+    
+}
+
+
+// estilos botões modal 
+
+#btnCadastroModal {
+        color: $roxoBackground;
+        background-color: $verdeFundoNav;
+        border: none;
+        width: auto;
+        height: 3rem;
+        border-radius: 10px;
+        margin-top: 2rem;  
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 0.5rem;
+        box-shadow: $boxShadow;
+        position: relative;
+        cursor: pointer;
+    
+    }
+
+
+#btnCancel{
+        color: rgb(252, 249, 249);
+        background-color: rgb(235, 76, 76);
+        border: none;
+        width: 8rem;
+        height: 3rem;
+        border-radius: 10px;
+        margin-top: 2rem;  
+        font-weight: bold;
+        font-size: 1rem;
+        padding: 0.5rem;
+        box-shadow: $boxShadow;
+        position: relative;
+        cursor: pointer;
+    
+    }
+
+
+#btnCancel:hover{
+    //background-color: $verdeFundoNav;
+    transition: 100ms;
+    color: rgb(252, 249, 249);
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 2px 2px 20px 1px rgba(117, 117, 116, 0.678);   
+    }
+
+#btnCadastroModal:hover{
+    //background-color: $verdeFundoNav;
+    transition: 100ms;
+    color: $roxoBackground;
+    font-weight: bold;
+    font-size: 17px;
+    box-shadow: 2px 2px 20px 1px rgba(117, 117, 116, 0.678); 
+}
+    
+
+
+
+//////////////////////// FIM CONFIGURAÇÃO PÁGINA MODAL \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
