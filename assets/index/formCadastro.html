@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->  
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <title>Relatórios Zapt Saúde</title>
 
 </head>
@@ -39,28 +41,14 @@
         <!--        Título-->
             <h1 class="h1-Registros">RELATÓRIOS DE REGISTROS ZAPT SAÚDE</h1>
     </div>
+    
 
     <!--        Tabelas de registros-->
     <div class="listaRelatorio">
         <div class="reg1">
             <div class="pacCad">
             <div class="titleReg1">PACIENTE CADASTRADOS</div>
-            <!-- Listagem dos pacientes cadastrados no sistema-->
-            <!-- <div class="qntPac">
-                <div class="nomePacListReg"></div>
-                <div class="cpfCriaReg"></div>
-                <div class="dnCriaReg"></div>
-                <div class="ResponsavelCriaReg"></div>
-                <div class="SUSReg"></div>
-                <div class="TelefoneReg"></div>
-                <div class="buttonEdit">
-                    <button id="btnEditReg">Editar</button>
-                </div>
-                <div class="buttonImprime">
-                    <button id="btnImprimeReg">Imprimir</button>
-                </div>
-
-            </div> -->
+            
             </div>
         </div>
 
@@ -68,16 +56,100 @@
         
 
         <!--  Início conteúdo de edição dos registros -->
-        <div class="reg2">  
+        <!-- <div class="reg2">  
                        <div class="titleReg2">EDITAR DADOS</div>
             <div class="editPac">
                 
             </div>
 
-        </div>
+        </div> -->
     </div>
 
+
+
+<!-- CRIA MODAL PARA EDITAR DADOS DA CRIANÇA ///////////////////////////////////////////////////////////////////////-->
+    <dialog>
+        <div  class="editTituloDadosModal">
+            <h1 class="h1Edit">EDITAR DADOS DO PACIENTE </h1>
+        </div>
+    <div class="colunasModal">
+        <div class="modal">
+            <p>NOME COMPLETO</p>
+            <input id="inputNameCompleteModal" type="text">
+        </div>
+        
+        <div class="modal">
+            <p>CPF</p>
+            <input id="inputCPFModal" type="number">
+        </div>
+
+        <div class="modal">
+                <p>DATA DE NASCIMENTO</p>
+                <input id="inputDNModal" type="date">
+            </div>
+        <div class="modal">
+                <p>CARTÃO SUS</p>
+                <input id="inputCartaoSUSModal" type="text">
+        </div>
+        <div class="modal">
+                <p>RG</p>
+                <input id="inputRGModal" type="text">
+        </div>
+        <div class="modal">
+                <p>CONTATO</p>
+                <input id="inputContatoModal" type="text">
+        </div>
+        <div class="modal">
+            <p>ID REGISTRO</p>
+            <input id="inputIDRegistroModal" type="text" disabled="true">
+        </div>
+        <br>
+    </div>
+    <br>
+    <hr>
+
+    <!--  EDITA DADOS RESPONSÁVEL  -->
+    <div  class="editTituloResponsavelDadosModal">
+        <h1 class="h1Edit">EDITAR DADOS DO RESPONSÁVEL</h1>
+    </div>
+    <br>
     
+    <div class="colunasModal2">
+    <div class="modal">
+        <p>NOME COMPLETO</p>
+        <input id="inputNomeResponsavelModal" type="text">
+    </div>
+    <div class="modal">
+        <p>CPF</p>
+        <input id="inputCPFResponsavelModal" type="text">
+    </div>
+    <div class="modal">
+        <p>RUA</p>
+        <input id="inputRuaResponsavelModal" type="text">
+    </div>
+    <div class="modal">
+        <p>BAIRRO</p>
+        <input id="inputBairroModal" type="text">
+    </div>
+    <div class="modal">
+    <p>CIDADE</p>
+    <input id="inputCidadeModal" type="text">
+    </div>
+</div>
+
+
+
+    
+    <div class="btnsModal">
+        <button id="btnCadastroModal" type="submit" >SALVAR ALTERAÇÕES</button>
+        <button id="btnCancel" type="submit" >CANCELAR</button>
+    </div>
+
+    </dialog>
+<!-- FIM DO MODAL ///////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
     
     <!--        Rodapé -->
     <div class="custom-shape-divider-bottom-1683068753">
