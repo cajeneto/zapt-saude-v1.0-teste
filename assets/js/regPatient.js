@@ -29,160 +29,6 @@ export const db = getDatabase(app);
 
 
 
-
-
-/* export function getDataPessoa() {
-   const dbref = ref(db);
-   var id_user = '02'
-   var btnEditReg = document.getElementById('btnEditReg').addEventListener('click', ()=> {
-      get(child(dbref, 'pessoa/'+ id_user))
-      .then((snapshot)=>{
-          const criancaCol = snapshot.val().crianca.nomeCompletoCrianca;
-          
-          console.log(criancaCol)
-          const responsavelCol = snapshot.val().responsavel.nomeCompleto_RESP;
-          console.log(responsavelCol)
-         })
-      .catch((error)=> {
-         console.log(error);
-         })
-   });
-   
-}
-   getDataPessoa(); */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// função para puxar dados do localStorage e inserir na guia de Relatórios.
-
-
-//const reg1 = document.querySelector('.reg1')
-/* const insereDiv = `
-<div class="qntPac">
-   <div class="nomePacListReg"><strong>NOME DA CRIANÇA: <br></strong></div>
-   <div class="idPacReg"></div>
-   <div class="cpfCriaReg"></div>
-   <div class="ResponsavelCriaReg"></div>
-   <div class="dnCriaReg"></div>
-   <div class="SUSReg"></div>
-   <div class="TelefoneReg"></div>
-<div class="buttonEdit">
-   <button id="btnEditReg">Editar</button>
-</div>
-<div class="buttonImprime">
-   <button id="btnImprimeReg">Imprimir</button>
-</div>
-</div>
-`
-
-function criaDivfilho() {
-   const reg1 = document.querySelector('.pacCad')
-   reg1.innerHTML+=insereDiv
-   btnEditarReg();
-   btnImprimeReg();
-   //getDataPessoa();
-   //criaElementoReg();
-} */
-//criaDivfilho();
-
-/* export function insereListReg(){
-   var nomePacListReg = document.querySelector('.nomePacListReg').innerHTML+="<strong>NOME DA CRIANÇA: <br></strong>"+localStorage.getItem('NOME_CRIANCA');
-   var cpfCriaReg = document.querySelector('.cpfCriaReg').innerHTML+="<strong> CPF: <br></strong>"+localStorage.getItem('CPF_CRIANCA');
-   var dnCriaReg = document.querySelector('.dnCriaReg').innerHTML+=" <strong>DATA NASCIMENTO: <br></strong>"+localStorage.getItem('DN_CRIANCA');
-   //dados responsável
-   var ResponsavelCriaReg = document.querySelector('.ResponsavelCriaReg').innerHTML+="<strong> RESPONSÁVEL:<br></strong> "+localStorage.getItem('NOME_RESP');
-   var SUSReg = document.querySelector('.SUSReg').innerHTML+="<strong> CARTÃO SUS:<br></strong> "+localStorage.getItem('CARTAOSUS_CRIANCA');
-   var TelefoneReg = document.querySelector('.TelefoneReg').innerHTML+="<strong> CONTATO: <br></strong> "+localStorage.getItem('CONTATO_CRIANCA');
-   
-} */
-//insereListReg();
-
-
-function btnEditarReg(){
-   var btnEditReg = document.getElementById('btnEditReg').addEventListener('click', ()=> {
-      //EditDados();
-   });
-   
-}
-
-/* function btnImprimeReg(){
-   var btnImprimeReg = document.getElementById('btnImprimeReg').addEventListener('click', (e)=> {
-      e.preventDefault();
-         alert('ola mundo imprime')
-
-   });
-   
-} */
-
-
-/* function criaElementoReg(){
-   let insereDivFilho = document.querySelector('.pacCad')//pega a div pacCad para inserir elemento dentro dela.
-   let divFilho = document.createElement("div")// cria elemento div //.setAttribute('class', 'qntPac');
-   divFilho.setAttribute('class', 'qntPac')//adiciona class com valor qntPac na div que foi criada
-   insereDivFilho.appendChild(divFilho)
-   
-} */
-
-
-/* function getDataPessoa() {
-   const dbref = ref(db);
-   //console.log(get(child(dbref, 'pessoa/')))
-   var id_user = '234'            
-   //var btnEditReg = document.getElementById('btnEditReg').addEventListener('click', ()=> {
-      get(child(dbref, 'pessoa/'+ id_user))
-      .then((snapshot)=>{
-         const criancaCol = snapshot.val().crianca.nomeCompletoCrianca; 
-         const responsavelCol = snapshot.val().responsavel.nomeCompleto_RESP;
-         const cartaoSus = snapshot.val().crianca.cartaoSus; 
-         const contato = snapshot.val().crianca.contato; 
-         const cpfCrianca = snapshot.val().crianca.cpfCrianca; 
-         const dataNascimento = snapshot.val().crianca.dataNascimento; 
-         const rg = snapshot.val().crianca.rg; 
-
-   
-
-         var nomePacListReg = document.querySelector('.nomePacListReg').innerHTML+="<strong>NOME DA CRIANÇA: <br></strong>"+criancaCol;
-         var idPacReg = document.querySelector('.idPacReg').innerHTML+="<strong>ID Registro: <br></strong>"+id_user;
-         var cpfCriaReg = document.querySelector('.cpfCriaReg').innerHTML+="<strong> CPF: <br></strong>"+cpfCrianca;
-         var dnCriaReg = document.querySelector('.dnCriaReg').innerHTML+=" <strong>DATA NASCIMENTO: <br></strong>"+dataNascimento;
-         //dados responsável
-         var ResponsavelCriaReg = document.querySelector('.ResponsavelCriaReg').innerHTML+="<strong> RESPONSÁVEL:<br></strong> "+responsavelCol;
-         var SUSReg = document.querySelector('.SUSReg').innerHTML+="<strong> CARTÃO SUS:<br></strong> "+cartaoSus;
-         var TelefoneReg = document.querySelector('.TelefoneReg').innerHTML+="<strong> CONTATO: <br></strong> "+contato;
-
-         })
-      .catch((error)=> {
-         console.log(error);
-         })
- 
-   
-} */
-   //getDataPessoa();
-
-
-
-
    
    // Função para listar o array que está dentro da collection
    function listarArray() {
@@ -202,6 +48,12 @@ function btnEditarReg(){
                var cpfCrianca = childSnapshot.val().crianca.cpfCrianca; 
                var dataNascimento = childSnapshot.val().crianca.dataNascimento; 
                var rg = childSnapshot.val().crianca.rg;
+               var cpf_resp = childSnapshot.val().responsavel.cpf_RESP;
+               var rua_resp = childSnapshot.val().responsavel.RUA_RESP;
+               var numero_resp = childSnapshot.val().responsavel.NUM_RESP;
+               var bairro_resp = childSnapshot.val().responsavel.BAIRRO_RESP;
+               var cidade_resp = childSnapshot.val().responsavel.CIDADE_RESP;
+               var rg_resp = childSnapshot.val().responsavel.RG_RESP;
 
 
                
@@ -214,17 +66,22 @@ function criarDiv(infoRegistro, criancaCol, cpfCrianca, responsavelCol, dataNasc
 
    div.innerHTML = `
        <div class="nomePacListReg"><strong>NOME DA CRIANÇA: <br></strong>${criancaCol}</div>
-       <div class="idPacReg"><strong>ID Registro: <br></strong>${infoRegistro}</div>
        <div class="cpfCriaReg"><strong> CPF: <br></strong>${cpfCrianca}</div>
-       <div class="dnCriaReg"><strong> RESPONSÁVEL:<br></strong>${responsavelCol}</div>
-       <div class="ResponsavelCriaReg"><strong>DATA NASCIMENTO: <br></strong>${dataNascimento}</div>
+       <div class="idPacReg"><strong>ID REGISTRO: <br></strong>${infoRegistro}</div>
+       <div class="ResponsavelCriaReg"><strong> RESPONSÁVEL:<br></strong>${responsavelCol}</div>
+       <div class="dnCriaReg"><strong>DATA NASCIMENTO: <br></strong>${dataNascimento}</div>
        <div class="SUSReg"><strong> CARTÃO SUS:<br></strong>${cartaoSus}</div>
        <div class="TelefoneReg"><strong> CONTATO: <br></strong>${contato}</div>
        <div class="buttonEdit">
-           <button class="btnEditReg">Editar</button>
+           <button class="btnEditReg">Editar
+           <span class="material-symbols-outlined">edit
+           </span>
+           </button>
        </div>
        <div class="buttonImprime">
-           <button class="btnImprimeReg">Imprimir</button>
+       <button class="btnImprimeReg">Imprimir
+       <span class="material-symbols-outlined">print</span>
+       </button>
        </div>
    `;
 
@@ -235,6 +92,7 @@ function criarDiv(infoRegistro, criancaCol, cpfCrianca, responsavelCol, dataNasc
    div.querySelector('.btnEditReg').addEventListener('click', () => {
        //console.log('Esse é o botão de editar do ID ' + infoRegistro);
        // Aqui você pode adicionar a lógica para editar com o ID infoRegistro
+       acaoBotaoEdit()
    });
 
    div.querySelector('.btnImprimeReg').addEventListener('click', () => {
@@ -246,27 +104,79 @@ function criarDiv(infoRegistro, criancaCol, cpfCrianca, responsavelCol, dataNasc
    return div;
 }
 
+function acaoBotaoEdit(){
+   const modal = document.querySelector('dialog')
+   
+   if(confirm(`Você deseja editar o dados do paciente: \n${criancaCol}\nID Registro: ${infoRegistro}`)){
+      modal.showModal()
+      // PEGA DADOS DO PACIENTE PARA QUE POSSAR SER EDITADO;
+      const edit_inputNameComplete = document.querySelector('#inputNameCompleteModal').value = criancaCol
+      const edit_inputCPF = document.querySelector('#inputCPFModal').value = cpfCrianca
+      const edit_inputDN = document.querySelector('#inputDNModal').value = dataNascimento
+      const edit_inputCartaoSUS = document.querySelector('#inputCartaoSUSModal').value = cartaoSus
+      const edit_inputRG = document.querySelector('#inputRGModal').value = rg
+      const edit_inputContato = document.querySelector('#inputContatoModal').value = contato
+      const edit_inputIDRegistroModal = document.querySelector('#inputIDRegistroModal').value = infoRegistro
+      
+
+      // PEGA DADOS DO RESPONSÁVEL PARA QUE POSSAR SER EDITADO;/////////////////////////////////////
+
+      const inputNomeResponsavelModal = document.querySelector('#inputNomeResponsavelModal').value = responsavelCol
+      const inputCPFResponsavelModal = document.querySelector('#inputCPFResponsavelModal').value = cpf_resp
+      const inputRuaResponsavelModal = document.querySelector('#inputRuaResponsavelModal').value = rua_resp
+      const inputBairroModal = document.querySelector('#inputBairroModal').value = bairro_resp
+      const inputCidadeModal = document.querySelector('#inputCidadeModal').value = cidade_resp
+
+      /// CONFIGURAÇÃO DOS BOTÕES DO MODAL
+
+      const btnCadastroModal = document.querySelector('#btnCadastroModal').addEventListener('click', ()=> {
+         alert("Dados alterado com sucesso!")
+         modal.close();
+         location.reload();
+      })
+
+      const btnCancel = document.querySelector('#btnCancel').addEventListener('click', () => {
+         modal.close();
+      })
+   }
+
+   
+
+}
+
+
+
 function acaoBotaoImprime(id) {
    if (id === infoRegistro) {
        //console.log('Ação de impressão para o ID '+infoRegistro);
       const conteudo = `
-      <h2 style='text-align:center'>Dados da Criança</h2>
-      <div style="background-image: url('/assets/img/zapt-saude-logo.jpeg'); width: 500px; height: 200px;"></div>
-      <hr/>
-      <h4 style='text-align:start'>Registro Nº: ${infoRegistro}</h4>
-      <hr/>
-      <h4 style='text-align:start'>Nome da Criança: ${criancaCol}</h4>
-      <h4 style='text-align:start'>CPF: ${cpfCrianca}</h4>
-      <h4 style='text-align:start'>Data de nascimento: ${dataNascimento}</h4>
-      <h4 style='text-align:start'>Cartão Sus: ${cartaoSus}</h4>
-      <h4 style='text-align:start'>Contato: ${contato}</h4>
-      <h4 style='text-align:start'>Responsável: ${responsavelCol}</h4>`;
-   
+      <div class="pacienteTitulo">
+            <p class="nomePacientePDF">DADOS DO PACIENTE
+      </div>
+      <div class="dadosPaciente">
+            <h4 style='text-align:start'>NOME DA CRIANÇA: ${criancaCol}</h4>
+            <h4 style='text-align:start' class="cpfCrianca">CPF CRIANÇA: ${cpfCrianca}</h4>
+            <h4 style='text-align:start' class="cartaoSUSCrianca">CARTÃO SUS: ${cartaoSus}</h4>
+            <h4 style='text-align:start' class="nomeResponsavel">RESPONSÁVEL: ${responsavelCol}</h4>
+            <h4 style='text-align:start' class="CPFResponsavel"> CPF RESPONSÁVEL: ${cpf_resp}</h4>
+            <h4 style='text-align:start' class="RGResponsavel">RG RESPONSÁVEL: ${rg_resp}</h4>
+            </p>
+      </div>
+      `;
+
+      
+      
+
 
       let estilo = "<style>";
       estilo += "body{font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;}";
+      estilo += ".pacienteTitulo {font-size: 20px; padding: 10px; display: flex; align-itens: center; justify-content: center}";
+      estilo += ".dadosPaciente {display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr;gap: 10px 10px;}";
+      //estilo += ".nomeResponsavel {position: relative; top: -60px; right: 30px;};";
+     // estilo += ".cpfCrianca {position: relative; top: -50px;";
+      
       estilo += "</style>";
-      const win = window.open('','', 'height=700,width=700');
+      const win = window.open('','', 'height=700,width=900');
       win.document.write('<html><head>');
       win.document.write('<title>ZAPT SAÚDE</title>');
       win.document.write(estilo);
@@ -275,7 +185,7 @@ function acaoBotaoImprime(id) {
       win.document.write(conteudo);
       win.document.write('</body></html>');
       win.print()
-      win.close()
+      //win.close()
       
 
 
