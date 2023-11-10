@@ -7,4 +7,5 @@ Na guia de #Cadastro existe um campo de visualização rápida de registros que 
 ![image](https://github.com/cajeneto/project-zapt-saude/assets/89559306/cb63cb17-99b2-412e-adbc-0ca7e3d5f0f8)
 
 A guia de #Registros é utilizada para visualizar a quantidade de registros existente no banco de dados, será adicionada a funcionalidade de edição de registro.
-![image](https://github.com/cajeneto/project-zapt-saude/assets/89559306/5773758a-71b9-4f44-8a06-f4c9d4d1f9ad)
+![image](https://github.com/cajeneto/zapt-saude-v1.0-teste/assets/89559306/daddcc92-e338-4adb-8b4e-99758ff1fce4)
+)
