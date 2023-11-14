@@ -26,7 +26,7 @@
  const app = initializeApp(firebaseConfig);
  //const analytics = getAnalytics(app);
  export const db = getDatabase(app);
- console.log(app)
+ 
 
 
  
@@ -62,12 +62,7 @@
         };
     
         // INSERE DADOS NO LOCAL STORAGE
-      localStorage.setItem('NOME_CRIANCA',armazena.nomeCompletoCrianca);
-      localStorage.setItem('CPF_CRIANCA',armazena.cpfCrianca);
-      localStorage.setItem('DN_CRIANCA',armazena.dataNascimento);
-      localStorage.setItem('CARTAOSUS_CRIANCA',armazena.cartaoSus);
-      localStorage.setItem('RG_CRIANCA',armazena.rg);
-      localStorage.setItem('CONTATO_CRIANCA',armazena.contato);
+      
         // FIM DA COLETA DE INPUT's DA CRIANÇA.
 
 
@@ -87,7 +82,7 @@
             return false;
         }
 
-
+        
         //CRIA OBJETO PARA ARMAZENAR INFORMAÇÕES DO RESPONSÁVEL E INSERIR NO LOCAL STORAGE
         const armazenaRESP = {
         nomeCompleto_RESP   : inputNameResp,
@@ -102,16 +97,7 @@
         SECAO_RESP          : inputSecao
         };
         
-      localStorage.setItem('NOME_RESP',armazenaRESP.nomeCompleto_RESP);
-      localStorage.setItem('CPF_RESP',armazenaRESP.cpf_RESP);
-      localStorage.setItem('RG_RESP',armazenaRESP.RG_RESP);
-      localStorage.setItem('RUA_RESP',armazenaRESP.RUA_RESP);
-      localStorage.setItem('NUM_RESP',armazenaRESP.NUM_RESP);
-      localStorage.setItem('BAIRRO_RESP',armazenaRESP.BAIRRO_RESP);
-      localStorage.setItem('CIDADE_RESP',armazenaRESP.CIDADE_RESP);
-      localStorage.setItem('TITULO_RESP',armazenaRESP.TITULO_RESP);
-      localStorage.setItem('ZONA_RESP',armazenaRESP.ZONA_RESP);
-      localStorage.setItem('SECAO_RESP',armazenaRESP.SECAO_RESP);
+      
 
 
      /////////// CHAMA FUNÇÃO DE DATE PATIENT \\\\\\\\\\\\\\\\\\\\\\
