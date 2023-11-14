@@ -54,6 +54,9 @@ export const db = getDatabase(app);
                var bairro_resp = childSnapshot.val().responsavel.BAIRRO_RESP;
                var cidade_resp = childSnapshot.val().responsavel.CIDADE_RESP;
                var rg_resp = childSnapshot.val().responsavel.RG_RESP;
+               var titulo_resp = childSnapshot.val().responsavel.TITULO_RESP;
+               var zona_resp = childSnapshot.val().responsavel.ZONA_RESP;
+               var secao_resp = childSnapshot.val().responsavel.SECAO_RESP;
 
 
                
@@ -149,31 +152,150 @@ function acaoBotaoEdit(){
 function acaoBotaoImprime(id) {
    if (id === infoRegistro) {
        //console.log('Ação de impressão para o ID '+infoRegistro);
+       
       const conteudo = `
+      <div class="imgLogo1">
+         <img class="imgLogo" src="/assets/img/zapt-saude-logo.jpeg">
+      </div>
+      <div class="headerZapt">
+         <h4 style='text-align:start'>HORÁRIO DE CHEGADA: _____________</h4>
+         <h4 style='text-align:end'>HORÁRIO DE SAÍDA: _____________</h4>
+         <h4 style='text-align:start'>ASSISTENTE SOCIAL: _____________</h4>
+         <h4 style='text-align:end'>PSICÓLOGA(O): _____________</h4>
+      </div>
       <div class="pacienteTitulo">
-            <p class="nomePacientePDF">DADOS DO PACIENTE
+            <p class="nomePacientePDF">DADOS DO PACIENTE</p>
       </div>
       <div class="dadosPaciente">
-            <h4 style='text-align:start'>NOME DA CRIANÇA: ${criancaCol}</h4>
-            <h4 style='text-align:start' class="cpfCrianca">CPF CRIANÇA: ${cpfCrianca}</h4>
+            <h4 style='text-align:start'>NOME: ${criancaCol}</h4>
+            <h4 style='text-align:start' class="cpfCrianca">CPF: ${cpfCrianca}</h4>
+            <h4 style='text-align:start' class="dataNascimentoCrianca">DATA NASCIMENTO: ${dataNascimento}</h4>
             <h4 style='text-align:start' class="cartaoSUSCrianca">CARTÃO SUS: ${cartaoSus}</h4>
-            <h4 style='text-align:start' class="nomeResponsavel">RESPONSÁVEL: ${responsavelCol}</h4>
-            <h4 style='text-align:start' class="CPFResponsavel"> CPF RESPONSÁVEL: ${cpf_resp}</h4>
+            <h4 style='text-align:start' class="RGCrianca">RG: ${rg}</h4>
+      </div>
+      <div class="pacienteTitulo">
+            <p class="nomePacientePDF">DADOS DO RESPONSÁVEL</p>
+      </div>
+      <div class="dadosResponsavel">
+            <h4 style='text-align:start' class="nomeResponsavel">NOME RESPONSÁVEL: ${responsavelCol}</h4>
+            <h4 style='text-align:start' class="CPFResponsavel"> CPF: ${cpf_resp}</h4>
             <h4 style='text-align:start' class="RGResponsavel">RG RESPONSÁVEL: ${rg_resp}</h4>
-            </p>
+            <h4 style='text-align:start' class="ContatoResponsavel">CONTATO: ${contato}</h4>
+            <h4 style='text-align:start' class="EnderecoResponsavel">ENDEREÇO: ${rua_resp}, ${numero_resp}, ${bairro_resp} - ${cidade_resp}.</h4>
+            <h4 style='text-align:start' class="tituloResponsavel">NÚMERO TÍTULO DE ELEITOR: ${titulo_resp} ZONA: ${zona_resp} SEÇÃO: ${secao_resp}</h4>
       </div>
       `;
+      const tabela = `
+      <div class="prontuario">
+         <h3>PRONTUÁRIO</h3>
+      </div>
+      <table>
+      <thead>
+        <tr>
+          <th class="data">
+            <h3>DATA</h3>
+          </th>
+          <th class="especialidade">
+            <h3>ESPECIALIDADE</h3>
+          </th>
+          <th class="tratativa">
+            <h3>TRATATIVA</h3>
+          </th>
+          <th class="aa">
+            <h3>A.</h3>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+        <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        </tr>
+      </tbody>`;
 
-      
-      
 
 
       let estilo = "<style>";
       estilo += "body{font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;}";
-      estilo += ".pacienteTitulo {font-size: 20px; padding: 10px; display: flex; align-itens: center; justify-content: center}";
-      estilo += ".dadosPaciente {display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr 1fr 1fr;gap: 10px 10px;}";
-      //estilo += ".nomeResponsavel {position: relative; top: -60px; right: 30px;};";
-     // estilo += ".cpfCrianca {position: relative; top: -50px;";
+      estilo += ".imgLogo1 {display: flex; align-itens: center; justify-content: center;}"; //alinha a img no centro da página
+      estilo += ".imgLogo {display: flex; background-image: url('/assets/img/zapt-saude-logo1.jpeg'); width: 250px; height: 95px; align-itens: center; justify-content: center; border: none}";
+      estilo += ".headerZapt {font-size: 11px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 0.5fr 0.5fr; height: 90px}";
+      estilo += ".pacienteTitulo {font-size: 20px; display: flex; align-itens: center; justify-content: center; height: 40px; }";
+      estilo += ".dadosPaciente {font-size: 12px;padding: 5px;display: grid; grid-template-columns: 1.5fr 1fr 1fr; grid-template-rows: 0.5fr 0.5fr; gap: 10px;border: 2px solid gray; border-radius: 20px; margin-top: 15px; margin-bottom: -17px;padding-bottom: 10px}";
+      estilo += ".dadosResponsavel {font-size: 12px; padding: 5px; display: grid; grid-template-columns: 2fr 1.5fr; grid-template-rows: 0.5fr 0.5fr 0.5fr;gap: 10px; border: 2px solid gray; border-radius: 20px; margin-top: 15px;padding-bottom: 20px}";
+      estilo += ".prontuario {display: grid; align-itens: center; justify-content: center; height: 50px}";
+      estilo += "table {border-collapse: collapse;}";
+      estilo += "table tr, table td, table th {border: 2px solid gray;}";
+      estilo += "table td {height: 30px;}";
+      estilo += ".data { width: 90px;padding-top: 20px;font-size: 12px;}";
+      estilo += ".especialidade { width: 200px; padding-top: 20px;font-size: 12px;}";
+      estilo += ".tratativa { width: 350px; padding-top: 20px;font-size: 12px;}";
+      estilo += ".aa { width: 90px; padding-top: 20px;font-size: 12px;}";
+      estilo += "h4 { height: 5px; }";
+
+      
       
       estilo += "</style>";
       const win = window.open('','', 'height=700,width=900');
@@ -182,13 +304,12 @@ function acaoBotaoImprime(id) {
       win.document.write(estilo);
       win.document.write('</head>');
       win.document.write('<body>');
-      win.document.write(conteudo);
+      win.document.write(conteudo+tabela);
+      //win.document.write(tabela);
       win.document.write('</body></html>');
       win.print()
       //win.close()
       
-
-
 
        // Coloque aqui a lógica para imprimir o item com o ID 123
    } else {
