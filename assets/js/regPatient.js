@@ -308,7 +308,7 @@ function acaoBotaoImprime(id) {
       //win.document.write(tabela);
       win.document.write('</body></html>');
       win.print()
-      //win.close()
+      win.close()
       
 
        // Coloque aqui a lógica para imprimir o item com o ID 123
@@ -349,48 +349,7 @@ criaDivFilho();
    }
 
    listarArray();
-
-   
-   
-   
-   
-   //btNew();
-   // Chame a função para listar o array
-   
-   //function obterRegistros5Min() {
-      // Defina a lógica para obter registros aqui
-      //console.log('Obtendo registros a cada 1 minuto...');
-      //listarArray()
-      //}
-      
-      // Defina um intervalo de 5 minutos (5 * 60 * 1000 milissegundos)
-      //const intervalo = 1 * 60 * 1000;
-      
-      // Execute a função a cada 5 minutos
-      //setInterval(obterRegistros5Min, intervalo);
-      
-      // Chame a função uma vez imediatamente para iniciar o processo
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      /* window.onload = () => {
-         //getDataPessoa();
-         //criaDivfilho();
-         //listarArray()
-         //obterRegistros5Min();
-         //EditDados()
-         
-      } */
-      
-      
-         
-      
+    
 
 
 // função para editar dados
