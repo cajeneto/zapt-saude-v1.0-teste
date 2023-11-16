@@ -310,7 +310,7 @@ function acaoBotaoImprime(id) {
      setTimeout(()=>{
          win.print()
       },500)
-      win.close()
+      //win.close()
       
 
        // Coloque aqui a lógica para imprimir o item com o ID 123
