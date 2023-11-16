@@ -280,7 +280,7 @@ function acaoBotaoImprime(id) {
       let estilo = "<style>";
       estilo += "body{font-family:'Helvetica Neue', Helvetica, Arial, sans-serif;}";
       estilo += ".imgLogo1 {display: flex; align-itens: center; justify-content: center;}"; //alinha a img no centro da página
-      estilo += ".imgLogo {display: flex; background-image: url('/assets/img/zapt-saude-logo1.jpeg'); width: 250px; height: 95px; align-itens: center; justify-content: center; border: none}";
+      estilo += ".imgLogo {display: flex; background-image: url('gs://zapt-saude-main.appspot.com/zapt-saude-logo.jpeg'); width: 250px; height: 95px; align-itens: center; justify-content: center; border: none}";
       estilo += ".headerZapt {font-size: 11px; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 0.5fr 0.5fr; height: 90px}";
       estilo += ".pacienteTitulo {font-size: 20px; display: flex; align-itens: center; justify-content: center; height: 40px; }";
       estilo += ".dadosPaciente {font-size: 12px;padding: 5px;display: grid; grid-template-columns: 1.5fr 1fr 1fr; grid-template-rows: 0.5fr 0.5fr; gap: 10px;border: 2px solid gray; border-radius: 20px; margin-top: 15px; margin-bottom: -17px;padding-bottom: 10px}";
