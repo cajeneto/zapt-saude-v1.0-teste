@@ -170,7 +170,6 @@
         document.querySelector("#inputCPFResp").value="";
         document.querySelector("#inputRGResp").value="";
         document.querySelector("#inputRua").value="";
-        document.querySelector("#inputNumero").value="";
         document.querySelector("#inputENDER").value="";
         document.querySelector("#inputCidade").value="";
         document.querySelector("#inputTitulo").value="";
