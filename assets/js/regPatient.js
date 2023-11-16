@@ -307,7 +307,9 @@ function acaoBotaoImprime(id) {
       win.document.write(conteudo+tabela);
       //win.document.write(tabela);
       win.document.write('</body></html>');
-      win.print()
+     setTimeout(()=>{
+         win.print()
+      },500)
       win.close()
       
 
