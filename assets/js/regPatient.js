@@ -181,7 +181,7 @@ function acaoBotaoImprime(id) {
             <h4 style='text-align:start' class="CPFResponsavel"> CPF: ${cpf_resp}</h4>
             <h4 style='text-align:start' class="RGResponsavel">RG RESPONSÁVEL: ${rg_resp}</h4>
             <h4 style='text-align:start' class="ContatoResponsavel">CONTATO: ${contato}</h4>
-            <h4 style='text-align:start' class="EnderecoResponsavel">ENDEREÇO: ${rua_resp}, ${numero_resp}, ${bairro_resp} - ${cidade_resp}.</h4>
+            <h4 style='text-align:start' class="EnderecoResponsavel">ENDEREÇO: ${rua_resp}, ${bairro_resp} - ${cidade_resp}.</h4>
             <h4 style='text-align:start' class="tituloResponsavel">NÚMERO TÍTULO DE ELEITOR: ${titulo_resp} ZONA: ${zona_resp} SEÇÃO: ${secao_resp}</h4>
       </div>
       `;
