@@ -71,7 +71,6 @@
         let inputCPFResp = document.querySelector("#inputCPFResp").value;
         let inputRGResp = document.querySelector("#inputRGResp").value;
         let inputRua = document.querySelector("#inputRua").value;
-        let inputNumero = document.querySelector("#inputNumero").value;
         let inputENDER = document.querySelector("#inputENDER").value;
         let inputCidade = document.querySelector("#inputCidade").value;
         let inputTitulo = document.querySelector("#inputTitulo").value;
@@ -89,7 +88,6 @@
         cpf_RESP            : inputCPFResp,
         RG_RESP             : inputRGResp,
         RUA_RESP            : inputRua,
-        NUM_RESP            : inputNumero,
         BAIRRO_RESP         : inputENDER,
         CIDADE_RESP         : inputCidade,
         TITULO_RESP         : inputTitulo,
